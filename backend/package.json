@@ -5,7 +5,11 @@
   "main": "src/server.js",
   "scripts": {
     "dev": "node --watch src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:migrate:name": "prisma migrate dev --name",
+    "prisma:generate": "prisma generate",
+    "prisma:studio": "prisma studio"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +29,7 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
+    "@types/node": "^25.9.1",
     "daemon": "^1.1.0",
     "prisma": "^7.8.0"
   }
